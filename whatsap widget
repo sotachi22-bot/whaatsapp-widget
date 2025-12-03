@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  #whatsapp-fixed-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+  }
+
+  #whatsapp-fixed-wrapper .whatsapp-text {
+    background:#25D366;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.2);
+  }
+
+  #whatsapp-fixed-wrapper .whatsapp-float {
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation: pulse 1.5s infinite;
+  }
+
+  #whatsapp-fixed-wrapper .whatsapp-float img {
+    width: 35px;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+<div id="whatsapp-fixed-wrapper">
+  <div class="whatsapp-text">Chat With Us</div>
+  <a href="https://wa.me/254727098368" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  </a>
+</div>
+</body>
+</html>
